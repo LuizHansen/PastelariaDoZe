@@ -10,6 +10,7 @@ router = APIRouter()
 
 @router.get("/funcionario/", tags=["Funcionário"])
 async def get_funcionario():
+
     try:
         session = db.Session()
         
